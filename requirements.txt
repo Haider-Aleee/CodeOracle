@@ -1,0 +1,10 @@
+google-genai
+tiktoken 
+chromadb
+langchain
+flask
+django
+django-cors-headers
+flask-cors
+GitPython
+python-dotenv

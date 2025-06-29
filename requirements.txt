@@ -1,10 +1,9 @@
+streamlit
 google-genai
 tiktoken 
 chromadb
 langchain
-flask
-django
-django-cors-headers
-flask-cors
+langchain-community
+langchain-google-genai
 GitPython
 python-dotenv

@@ -1,10 +1,10 @@
 import os
 from git import Repo
-from langchain.document_loaders.generic import GenericLoader
-from langchain.document_loaders.parsers import LanguageParser
+from langchain_community.document_loaders.generic import GenericLoader
+from langchain_community.document_loaders.parsers.language.language_parser import LanguageParser
 from langchain.text_splitter import Language
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
 
 
 #clone any github repositories 
@@ -43,5 +43,5 @@ def text_splitter(documents):
 
 #loading embeddings model
 def load_embedding():
-    embeddings=ChatGoogleGenerativeAI()
+    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     return embeddings
